@@ -1,21 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { SignIn } from "./src/screens/signIn";
+import { Raleway_700Bold } from "@expo-google-fonts/raleway";
+import { useFonts } from "expo-font";
+import AppLoading from "expo-app-loading";
+import { StatusBar, View } from "react-native";
+import { Router } from "./src/router";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+	const [fontsLoaded] = useFonts({ Raleway_700Bold });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+	if (!fontsLoaded) {
+		return <AppLoading />;
+	}
+	return (
+		<>
+			<StatusBar
+				backgroundColor="transparent"
+				translucent
+				barStyle="light-content"
+			></StatusBar>
+			<Router />
+		</>
+	);
+}
