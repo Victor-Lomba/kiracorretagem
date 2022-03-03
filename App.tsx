@@ -1,5 +1,4 @@
 import React from "react";
-import { SignIn } from "./src/screens/signIn";
 import { Raleway_700Bold } from "@expo-google-fonts/raleway";
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
@@ -19,6 +18,7 @@ export default function App() {
 				translucent
 				barStyle="light-content"
 			></StatusBar>
+
 			<Router />
 		</>
 	);

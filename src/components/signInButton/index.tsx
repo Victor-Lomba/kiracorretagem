@@ -6,15 +6,16 @@ import style from "./style";
 import { theme } from "../../global/styles/theme";
 
 export function SignInButton(props: RectButtonProps) {
+	const ios = Platform.OS === "ios";
 	return (
 		<RectButton
 			{...props}
 			style={{
-				backgroundColor: Platform.OS === "ios" ? "white" : theme.colors.google,
+				backgroundColor: ios ? "white" : theme.colors.google,
 				...style.button,
 			}}
 		>
-			{Platform.OS === "ios" ? (
+			{ios ? (
 				<>
 					<View style={style.iconContainer}>
 						<Icon name="apple1" size={30}></Icon>

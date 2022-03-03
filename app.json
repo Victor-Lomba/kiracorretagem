@@ -1,6 +1,15 @@
 {
 	"expo": {
-		"name": "kiracorretagem",
+		"scheme": "kiracorretagem",
+		"androidStatusBar": {
+			"barStyle": "light-content",
+			"backgroundColor": "#00000000"
+		},
+		"androidNavigationBar": {
+			"backgroundColor": "#041C34",
+			"barStyle": "light-content"
+		},
+		"name": "Kira Corretagem",
 		"slug": "kiracorretagem",
 		"version": "0.0.1",
 		"orientation": "portrait",
@@ -15,9 +24,18 @@
 		},
 		"assetBundlePatterns": ["**/*"],
 		"ios": {
-			"supportsTablet": true
+			"config": {
+				"googleSignIn": {
+					"reservedClientId": "com.googleusercontent.apps.197276588201-nna6tol3uggoq3udgia6uaugrp2sk3pk"
+				}
+			},
+			"supportsTablet": true,
+			"bundleIdentifier": "com.kiracorretagem.app",
+			"googleServicesFile": "./GoogleService-Info.plist"
 		},
 		"android": {
+			"package": "com.kiracorretagem.app",
+			"googleServicesFile": "./google-services.json",
 			"adaptiveIcon": {
 				"foregroundImage": "./assets/adaptive-icon.png",
 				"backgroundColor": "#041C34"

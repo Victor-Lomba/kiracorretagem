@@ -1,0 +1,54 @@
+{
+	"project_info": {
+		"project_number": "197276588201",
+		"project_id": "kira-corretagem-app",
+		"storage_bucket": "kira-corretagem-app.appspot.com"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:197276588201:android:8567a41915017fd76f71b8",
+				"android_client_info": {
+					"package_name": "com.kiracorretagem.app"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "197276588201-qppjl5mr9pp8ldnu6jtq8m61tj6vn5jg.apps.googleusercontent.com",
+					"client_type": 1,
+					"android_info": {
+						"package_name": "com.kiracorretagem.app",
+						"certificate_hash": "142c0b0b86c31e0247084f9dd75f638b92cf0634"
+					}
+				},
+				{
+					"client_id": "197276588201-qppjl5mr9pp8ldnu6jtq8m61tj6vn5jg.apps.googleusercontent.com",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "AIzaSyCOX0ArE5FyH75yEoAJm76gMrZrBBneD14"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "197276588201-qppjl5mr9pp8ldnu6jtq8m61tj6vn5jg.apps.googleusercontent.com",
+							"client_type": 3
+						},
+						{
+							"client_id": "197276588201-vqj6snlikqn8aribhn9ce8qro2mi75ob.apps.googleusercontent.com",
+							"client_type": 2,
+							"ios_info": {
+								"bundle_id": "com.kiracorretagem.app"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}
